@@ -1,0 +1,20 @@
+name: Date Printer
+on: [push]
+jobs:
+  linux_job:
+    runs-on: linux-latest
+    steps:
+    - run: data
+  windows_job:
+    runs-on: windows-latest
+    steps:
+    - run: date
+  macos_job:
+    runs-on: macos-latest
+    steps:
+    - run: date
+  window_job_2:
+    runs-on: windows-latest
+    needs: [linux_job, windows_job, macos_job]
+    steps:
+    - run: date
