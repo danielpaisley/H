@@ -13,8 +13,8 @@ jobs:
     runs-on: macos-latest
     steps:
     - run: date
-  window_job_2:
-    runs-on: windows-latest
+  windows_job_2:
     needs: [linux_job, windows_job, macos_job]
+    runs-on: windows-latest
     steps:
     - run: date
