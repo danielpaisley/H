@@ -1,0 +1,9 @@
+name: Message Printer
+on: [pull_request]
+jobs:
+  print_message:
+    runs-on: windows-latest
+    steps:
+    - run: echo Hello World
+      
+  
