@@ -2,7 +2,7 @@ name: Date Printer
 on: [push]
 jobs:
   linux_job:
-    runs-on: linux-latest
+    runs-on: ubuntu-latest
     steps:
     - run: date
   windows_job:
